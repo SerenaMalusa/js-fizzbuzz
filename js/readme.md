@@ -41,4 +41,6 @@ Se sei a corto di idee per lo stile, potresti prendere spunto dallo screenshot f
 
 7. metti l'elemento creato in pagina
 
+### Svolgimento BONUS 2:
+
 8. aggiungi all'elemento le opportune calssi di bootstrap
