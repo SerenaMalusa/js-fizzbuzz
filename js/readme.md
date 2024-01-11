@@ -37,7 +37,7 @@ Se sei a corto di idee per lo stile, potresti prendere spunto dallo screenshot f
 
 5. se l'indice del ciclo è divisibile per 3 stampa Fizz dentro l'elemento creato
 
-6. altrimenti stampa il l'indice del ciclo dentro l'elemento creato
+6. altrimenti stampa l'indice del ciclo dentro l'elemento creato
 
 7. metti l'elemento creato in pagina
 

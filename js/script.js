@@ -6,36 +6,37 @@ for (i = 1; i <= 100; i++) {
 
     //3. creare un elemento html con classe box
     const box = document.createElement('div');
-    //8. aggiungi all'elemento le opportune calssi di bootstrap
     box.classList.add('box');
+
+    //crea una variabile che conterrà il testo da stampare
+    //6. altrimenti stampa l'indice del ciclo dentro l'elemento creato
+    let boxText = `${i}`;
 
     //3. se il numero è divisibile per 15 
     if (i % 15 == 0) {
 
         //stampa FizzBuzz
-        box.innerText = 'FizzBuzz';
-        box.classList.add('FizzBuzz');
+        boxText = 'FizzBuzz';
     
     //4. se il numero è divisibile per 5 
     } else if ( i % 5 == 0 ) {
 
         //stampa Buzz
-        box.innerText = 'Buzz';
-        box.classList.add('buzz');
+        boxText = 'Buzz';
 
     //5. se il numero è divisibile per 3 
     } else if ( i % 3 == 0 ) {
 
         //stampa Fizz
-        box.innerText = 'Fizz';
-        box.classList.add('fizz');
+        boxText = 'Fizz';
 
-    //6. altrimenti 
-    } else {
-
-        //stampa il numero
-        box.innerText = i;
     }
+
+    //stampa il numero
+    box.innerText = boxText;
+
+    //8. aggiungi all'elemento le opportune calssi di bootstrap
+    box.classList.add('box',boxText);
 
     //7. metti l'elemento creato in pagina
     container.append(box);
