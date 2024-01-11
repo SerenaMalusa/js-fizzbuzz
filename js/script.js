@@ -6,7 +6,6 @@ for (i = 1; i <= 100; i++) {
 
     //3. creare un elemento html con classe box
     const box = document.createElement('div');
-    box.classList.add('box');
 
     //crea una variabile che conterrà il testo da stampare
     //6. altrimenti stampa l'indice del ciclo dentro l'elemento creato
@@ -35,7 +34,7 @@ for (i = 1; i <= 100; i++) {
     //stampa il numero
     box.innerText = boxText;
 
-    //8. aggiungi all'elemento le opportune calssi di bootstrap
+    //8. aggiungi all'elemento le opportune classi
     box.classList.add('box',boxText);
 
     //7. metti l'elemento creato in pagina
