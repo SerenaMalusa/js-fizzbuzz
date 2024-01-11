@@ -12,7 +12,7 @@ for (i = 1; i <= 100; i++) {
     let boxText = `${i}`;
 
     //3. se il numero è divisibile per 15 
-    if (i % 15 == 0) {
+    if (i % 5 == 0 && i % 3 == 0) {
 
         //stampa FizzBuzz
         boxText = 'FizzBuzz';
