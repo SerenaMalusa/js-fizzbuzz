@@ -34,7 +34,7 @@ for (i = 1; i <= 100; i++) {
     //stampa il numero
     box.innerText = boxText;
 
-    //8. aggiungi all'elemento le opportune classi
+    //8. aggiungi all'elemento le opportune clssi di bootstrap
     box.classList.add('box',boxText);
 
     //7. metti l'elemento creato in pagina
