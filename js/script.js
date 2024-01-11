@@ -7,25 +7,28 @@ for (i = 1; i <= 100; i++) {
     //3. creare un elemento html con classe box
     const box = document.createElement('div');
     //8. aggiungi all'elemento le opportune calssi di bootstrap
-    box.classList.add('box', 'col-2');
+    box.classList.add('box');
 
     //3. se il numero è divisibile per 15 
     if (i % 15 == 0) {
 
         //stampa FizzBuzz
         box.innerText = 'FizzBuzz';
+        box.classList.add('FizzBuzz');
     
     //4. se il numero è divisibile per 5 
     } else if ( i % 5 == 0 ) {
 
         //stampa Buzz
         box.innerText = 'Buzz';
+        box.classList.add('buzz');
 
     //5. se il numero è divisibile per 3 
     } else if ( i % 3 == 0 ) {
 
         //stampa Fizz
         box.innerText = 'Fizz';
+        box.classList.add('fizz');
 
     //6. altrimenti 
     } else {

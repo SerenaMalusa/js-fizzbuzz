@@ -1,7 +1,38 @@
 /*************
+    CUSTOM PROPS 
+*************/
+:root {
+    --margin: calc(100vw / 13);
+}
+
+/*************
     BODY 
 *************/
 body {
     margin: 0 auto;
     text-align: center;
+}
+
+/*************
+    BOX
+*************/
+.box {
+    width: var(--margin);
+    aspect-ratio: 1;
+    border: 0.5px solid black;
+    line-height: var(--margin);
+
+    background-color: palevioletred;
+}
+
+.Fizz {
+    background-color: yellow;
+}
+
+.Buzz {
+    background-color: lightskyblue;
+}
+
+.FizzBuzz {
+    background-color: violet;
 }
