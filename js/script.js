@@ -1,29 +1,40 @@
-//1. creare un ciclo che vada da 1 a 100
+//1 prendi il container dal dom
+const container = document.querySelector('.container');
+
+//2. creare un ciclo che vada da 1 a 100
 for (i = 1; i <= 100; i++) {
 
-    //2. se il numero è divisibile per 15 
+    //3. creare un elemento html con classe box
+    const box = document.createElement('div');
+    //8. aggiungi all'elemento le opportune calssi di bootstrap
+    box.classList.add('box', 'col-2');
+
+    //3. se il numero è divisibile per 15 
     if (i % 15 == 0) {
 
         //stampa FizzBuzz
-        console.log('FizzBuzz');
+        box.innerText = 'FizzBuzz';
     
-    //3. se il numero è divisibile per 5 
+    //4. se il numero è divisibile per 5 
     } else if ( i % 5 == 0 ) {
 
         //stampa Buzz
-        console.log('Buzz');
+        box.innerText = 'Buzz';
 
-    // 4. se il numero è divisibile per 3 
+    //5. se il numero è divisibile per 3 
     } else if ( i % 3 == 0 ) {
 
         //stampa Fizz
-        console.log('Fizz');
+        box.innerText = 'Fizz';
 
-    //5. altrimenti 
+    //6. altrimenti 
     } else {
 
         //stampa il numero
-        console.log(i);
+        box.innerText = i;
     }
 
+    //7. metti l'elemento creato in pagina
+    container.append(box);
+    
 };
